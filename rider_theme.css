@@ -1,0 +1,149 @@
+/*######################################*/
+/* Custom Mastodon CSS					*/
+/* Just go to the section you 			*/
+/* want to modify and change as needed	*/
+/* Version 0.1							*/
+/* By Nick Rider						*/
+/* www.riderdesign.co.uk				*/
+/*######################################*/
+
+/*--------------------------------------*/
+/* Toot box modifications 				*/
+/*--------------------------------------*/
+
+/* Change Toot to Tweet */
+  div.drawer button.button
+  {
+    text-indent: -99999px;
+    line-height: 0;
+  }
+
+  div.drawer button.button::after
+  {
+    content: "Tweet";
+    text-indent: 0;
+    line-height: initial;
+    display: block;
+    margin-top: -2.1rem;
+  }
+ /* Change emoji to megaphone or whatever you want */
+ .emoji-button img
+  {
+    display: none;
+  }
+
+  .emoji-button::after
+  {
+    content: "📢";
+  }
+
+  .emoji-button
+  {
+    text-decoration: none !important;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+/* Design of the input box */  
+  .drawer__inner__mastodon
+  {
+    display: none;
+  }
+  
+.drawer__inner
+{
+  border-radius: 0.25rem;
+  height: auto;
+  max-height: 100%;
+  overflow-y: auto;
+  background-color: #444b5d
+}
+.autosuggest-textarea__textarea, .compose-form__modifiers
+{
+  background-color: #282C37 !important;
+}
+.compose-form .compose-form__buttons-wrapper
+{
+  background-color: #A4AFCE !important;
+  
+/*--------------------------------------*/
+/* Round profile picture 				*/
+/*--------------------------------------*/
+
+   .account__avatar
+  {
+    border-radius: 100%;
+  }
+
+  :not(.notification) .account__avatar-overlay .account__avatar-overlay-overlay
+  {
+    display: none;
+  }
+
+  :not(.notification) .account__avatar-overlay .account__avatar-overlay-base
+  {
+    width: 48px;
+    height: 48px;
+    background-size: 48px 48px;
+    border-radius: 100%;
+  }
+
+  .notification__message .fa
+  {
+    margin-left: -30px;
+    margin-top: 8px;
+  }
+
+  .notification .account__avatar-overlay .account__avatar-overlay-overlay
+  {
+    display: initial;
+    /*width: 48px;
+    height: 48px;
+    background-size: 48px;*/
+    width: 24px;
+    height: 24px;
+    background-size: 24px 24px;
+    border-radius: 100%;
+    bottom: inherit;
+    right: 0;
+    top: -24px;
+  }
+
+  .notification .account__avatar-overlay .account__avatar-overlay-base
+  {
+    display: none;
+  }
+
+/*--------------------------*/
+/* Single column view		*/
+/*--------------------------*/
+
+  .tabs-bar {display: flex;
+    width: 635px;
+    margin-left: calc(25% + 155px);
+    z-index: 1;
+  }
+
+  .tabs-bar > a:first-child
+  {
+    display: none;
+  }
+
+  .columns-area
+  {
+    width: calc(50% + 300px);
+    margin: -60px auto auto;
+  }
+
+  .column
+  {
+    display: none;
+  }
+
+  .column:last-child
+  {
+    display: flex;
+    min-width: 600px;
+    margin-top: 55px;
+  }
+}
+
