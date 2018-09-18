@@ -1,14 +1,14 @@
 /*######################################*/
-/* Custom Mastodon CSS					*/
-/* Just go to the section you 			*/
+/* Custom Mastodon CSS					        */
+/* Just go to the section you 			    */
 /* want to modify and change as needed	*/
-/* Version 0.1							*/
-/* By Nick Rider						*/
-/* www.riderdesign.co.uk				*/
+/* Version 0.1							            */
+/* By Nick Rider						            */
+/* www.riderdesign.co.uk				        */
 /*######################################*/
 
 /*--------------------------------------*/
-/* Toot box modifications 				*/
+/* Toot box modifications 				      */
 /*--------------------------------------*/
 
 /* Change Toot to Tweet */
@@ -60,13 +60,14 @@
 .autosuggest-textarea__textarea, .compose-form__modifiers
 {
   background-color: #282C37 !important;
+  color: #FAFAFA !important;
 }
 .compose-form .compose-form__buttons-wrapper
 {
   background-color: #A4AFCE !important;
   
 /*--------------------------------------*/
-/* Round profile picture 				*/
+/* Round profile picture 				        */
 /*--------------------------------------*/
 
    .account__avatar
@@ -114,7 +115,7 @@
   }
 
 /*--------------------------*/
-/* Single column view		*/
+/* Single column view		    */
 /*--------------------------*/
 
   .tabs-bar {display: flex;
